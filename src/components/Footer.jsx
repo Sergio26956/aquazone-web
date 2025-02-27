@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FacebookIcon, InstagramIcon, XMarkIcon } from '@heroicons/react/24/outline'; // Iconos actualizados
+import { FacebookIcon, InstagramIcon, XMarkIcon } from '@heroicons/react/24/outline';
 
 export default function Footer() {
   return (
