@@ -17,7 +17,7 @@ export default function Navbar() {
             <motion.img
               whileHover={{ scale: 1.05 }}
               src="/images/logo.webp" 
-              alt="Logo de AQUAZONE"
+              alt="AQUAZONE Logo"
               className="h-12 w-auto"
             />
           </Link>
