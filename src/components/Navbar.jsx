@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { MenuIcon, XIcon } from '@heroicons/react/outline';
+import { MenuIcon } from '@heroicons/react/outline';
 import { motion } from 'framer-motion';
 
 export default function Navbar() {
@@ -17,7 +17,7 @@ export default function Navbar() {
             <motion.img
               whileHover={{ scale: 1.05 }}
               src="/images/logo.webp" 
-              alt="AQUAZONE Logo"
+              alt="Logo de AQUAZONE"
               className="h-12 w-auto"
             />
           </Link>
