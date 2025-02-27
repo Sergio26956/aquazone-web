@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { MenuIcon } from '@heroicons/react/outline';
+import { Bars3Icon } from '@heroicons/react/24/outline'; // Icono actualizado
 import { motion } from 'framer-motion';
 
 export default function Navbar() {
@@ -41,7 +41,7 @@ export default function Navbar() {
 
           {/* Menú Mobile (Icono Hamburguesa) */}
           <button className="md:hidden text-white">
-            <MenuIcon className="h-8 w-8" />
+            <Bars3Icon className="h-8 w-8" /> {/* Icono actualizado */}
           </button>
 
         </div>
