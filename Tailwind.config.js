@@ -1,10 +1,13 @@
 module.exports = {
-     content: [
-       "./src/**/*.{js,jsx,ts,tsx}",
-       "./pages/**/*.{js,jsx,ts,tsx}",
-     ],
-     theme: {
-       extend: {},
-     },
-     plugins: [],
-   }
+  content: [
+    './src/**/*.{js,jsx,ts,tsx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        'aqua-blue': '#0066cc', // Color personalizado
+      },
+    },
+  },
+  plugins: [],
+};
