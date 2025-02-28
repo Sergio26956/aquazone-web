@@ -2,6 +2,7 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import Image from 'next/image';
 
+// ¡Asegúrate de que esta línea tenga "export default"!  
 export default function Playas() {
   return (
     <div>
