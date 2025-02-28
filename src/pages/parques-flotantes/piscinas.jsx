@@ -1,47 +1,34 @@
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
-import Image from 'next/image';
+// ... (imports y Navbar/Footer)
 
 export default function Piscinas() {
+  const images = [
+    "/images/piscina1.webp",
+    "/images/piscina2.webp",
+    "/images/piscina3.webp",
+  ];
+
   return (
     <div>
-      <Navbar />
+      {/* ... (Hero Section existente) */}
       
-      {/* Hero Section */}
-      <div className="bg-blue-50 py-20">
-        <div className="max-w-7xl mx-auto px-4 text-center">
-          <h1 className="text-4xl font-bold text-blue-900 mb-8">
-            Montaje en Piscinas 🏊
-          </h1>
-          
-          {/* Imagen */}
-          <div className="relative h-96 w-full mb-12 rounded-xl overflow-hidden shadow-2xl">
-            <Image 
-              src="/images/Captura de pantalla_20210722_152628_com.android.gallery3d.webp"
-              alt="Parque en piscina"
-              layout="fill"
-              objectFit="cover"
-            />
-          </div>
-        </div>
-      </div>
-
-      {/* Contenido */}
+      {/* Nueva Sección: Galería */}
       <div className="max-w-7xl mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold text-center mb-12">Servicio Profesional</h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-white p-6 rounded-xl shadow-lg">
-            <h3 className="text-xl font-bold mb-4">Para Eventos Privados</h3>
-            <p className="text-gray-600">Cumpleaños, comuniones y celebraciones familiares.</p>
-          </div>
-          <div className="bg-white p-6 rounded-xl shadow-lg">
-            <h3 className="text-xl font-bold mb-4">Instalación Rápida</h3>
-            <p className="text-gray-600">Montaje en menos de 4 horas.</p>
-          </div>
+        <h2 className="text-3xl font-bold text-center mb-12">Galería de Eventos</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {images.map((img, index) => (
+            <div key={index} className="relative h-64 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform">
+              <Image 
+                src={img}
+                alt={`Evento ${index + 1}`}
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+          ))}
         </div>
       </div>
 
-      <Footer />
+      {/* ... (Footer) */}
     </div>
   );
 }
