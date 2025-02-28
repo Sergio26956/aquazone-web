@@ -13,15 +13,12 @@ export default function KamikazeJump() {
           <h1 className="text-4xl font-bold text-blue-900 mb-8">
             Kamikaze Jump 🚀
           </h1>
-          <p className="text-xl text-gray-600 mb-12">
-            La atracción terrestre más emocionante para eventos y celebraciones.
-          </p>
           
-          {/* Imagen Principal */}
+          {/* Imagen */}
           <div className="relative h-96 w-full mb-12 rounded-xl overflow-hidden shadow-2xl">
             <Image 
-              src="/images/kamikaze-jump.webp" 
-              alt="Kamikaze Jump"
+              src="/images/IMG_20191030_014304.webp"
+              alt="Atracción Kamikaze"
               layout="fill"
               objectFit="cover"
             />
@@ -29,32 +26,18 @@ export default function KamikazeJump() {
         </div>
       </div>
 
-      {/* Sección de Detalles */}
+      {/* Contenido */}
       <div className="max-w-7xl mx-auto px-4 py-16">
         <h2 className="text-3xl font-bold text-center mb-12">Detalles Técnicos</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <div className="bg-white p-6 rounded-xl shadow-lg">
             <h3 className="text-xl font-bold mb-4">Altura y Seguridad</h3>
-            <p className="text-gray-600">
-              Altura máxima: 10 metros. Cumple con todas las normativas de seguridad.
-            </p>
+            <p className="text-gray-600">Altura máxima: 10 metros. Certificación CE.</p>
           </div>
           <div className="bg-white p-6 rounded-xl shadow-lg">
             <h3 className="text-xl font-bold mb-4">Capacidad</h3>
-            <p className="text-gray-600">
-              Hasta 20 personas por hora. Ideal para eventos masivos.
-            </p>
+            <p className="text-gray-600">Hasta 20 personas por hora.</p>
           </div>
-        </div>
-
-        {/* Llamada a la Acción */}
-        <div className="text-center mt-20">
-          <a 
-            href="/contacto" 
-            className="bg-blue-600 text-white px-8 py-3 rounded-full text-lg hover:bg-blue-700 transition-all"
-          >
-            Solicitar Presupuesto
-          </a>
         </div>
       </div>
 
