@@ -1,7 +1,10 @@
-@tailwind base;
-   @tailwind components;
-   @tailwind utilities;
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
 
-   body {
-     @apply font-sans;
-   }
+.wave-animation {
+  animation: wave 2s infinite;
+}
