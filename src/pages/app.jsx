@@ -1,4 +1,4 @@
-import WhatsAppButton from '../components/WhatsAppButton'; // Ruta corregida
+import WhatsAppButton from '../../components/WhatsAppButton'; // Ruta corregida ✅
 
 function MyApp({ Component, pageProps }) {
   return (
