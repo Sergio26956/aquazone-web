@@ -1,44 +1,25 @@
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import Image from 'next/image';
+// src/pages/index.jsx
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import HeroSection from '@/components/HeroSection';
 
 export default function Home() {
   return (
-    <div>
+    <div className="relative">
       <Navbar />
       
-      <div className="min-h-screen bg-blue-50">
-        <div className="max-w-7xl mx-auto px-4 py-20 text-center">
-          {/* Logo (usa el que ya tienes) */}
-          <div className="relative h-32 w-64 mx-auto mb-8">
-            <Image 
-              src="/images/Logo.webp" // Ruta actual de tu logo
-              alt="Logo de AQUAZONE"
-              layout="fill"
-              objectFit="contain"
-            />
-          </div>
+      {/* Hero Section Épico (reemplaza todo el contenido anterior) */}
+      <HeroSection />
 
-          {/* Imagen Principal (usa la que ya tienes) */}
-          <div className="relative h-96 w-full mb-12">
-            <Image 
-              src="/images/file-S8u6r6TfUn2TfzMm4x2M9c.webp" 
-              alt="Parque acuático"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-xl shadow-2xl"
-            />
-          </div>
-
-          {/* Botones */}
-          <div className="flex justify-center gap-6 mb-20">
-            <a href="/parques-flotantes" className="bg-blue-600 text-white px-8 py-3 rounded-full text-lg hover:bg-blue-700 transition-all">
-              Ver Parques Flotantes
-            </a>
-            <a href="/parques-terrestres" className="bg-white text-blue-600 px-8 py-3 rounded-full text-lg border-2 border-blue-600 hover:bg-blue-50 transition-all">
-              Parques Terrestres
-            </a>
-          </div>
+      {/* Sección de Contenido Adicional (opcional) */}
+      <div className="bg-gradient-to-b from-blue-50 to-white py-20">
+        <div className="max-w-7xl mx-auto px-4 text-center">
+          <h2 className="text-4xl font-bold text-blue-900 mb-12">
+            Vive la experiencia acuática definitiva
+          </h2>
+          
+          {/* Galería/Contenido futuro aquí */}
+          
         </div>
       </div>
 
