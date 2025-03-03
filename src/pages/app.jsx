@@ -1,10 +1,10 @@
-import WhatsAppButton from '../components/WhatsAppButton';
+import WhatsAppButton from '../components/WhatsAppButton'; // Ruta corregida
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <Component {...pageProps} />
-      <WhatsAppButton /> {/* Esto añade el botón a todas las páginas */}
+      <WhatsAppButton /> {/* Botón añadido aquí */}
     </>
   );
 }
