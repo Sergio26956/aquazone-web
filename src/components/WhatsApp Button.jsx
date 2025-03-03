@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function WhatsAppButton() {
   return (
     <Link 
-      href="https://wa.me/34649002658" 
+      href="https://wa.me/34649002658" // Número actualizado ✅
       className="fixed bottom-8 right-8 bg-green-600 text-white p-4 rounded-full shadow-xl hover:bg-green-700 transition-all"
     >
       <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 24 24" fill="currentColor">
