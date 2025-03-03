@@ -7,24 +7,23 @@ export default function Home() {
     <div>
       <Navbar />
       
-      {/* Sección Hero */}
       <div className="min-h-screen bg-blue-50">
         <div className="max-w-7xl mx-auto px-4 py-20 text-center">
-          {/* Logo */}
+          {/* Logo (usa el que ya tienes) */}
           <div className="relative h-32 w-64 mx-auto mb-8">
             <Image 
-              src="/images/Logo.webp"
+              src="/images/Logo.webp" // Ruta actual de tu logo
               alt="Logo de AQUAZONE"
               layout="fill"
               objectFit="contain"
             />
           </div>
 
-          {/* Imagen Principal */}
+          {/* Imagen Principal (usa la que ya tienes) */}
           <div className="relative h-96 w-full mb-12">
             <Image 
-              src="/images/file-S8u6r6TfUn2TfzMm4x2M9c.webp"
-              alt="Parque acuático hinchable"
+              src="/images/file-S8u6r6TfUn2TfzMm4x2M9c.webp" 
+              alt="Parque acuático"
               layout="fill"
               objectFit="cover"
               className="rounded-xl shadow-2xl"
