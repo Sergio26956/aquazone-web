@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Logo y Descripción */}
           <div className="space-y-4">
             <Link href="/">
-              <img src="/images/Logo.webp" alt="AQUAZONE Logo" className="h-12 w-auto" />
+              <img src="/images/logo-aquazone.webp" alt="AQUAZONE Logo" className="h-12 w-auto" />
             </Link>
             <p className="text-sm">Vive la experiencia acuática con AQUAZONE.</p>
           </div>
