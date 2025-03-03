@@ -1,22 +1,26 @@
-import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
-export default function Galeria({ images }) {
+export default function Galeria() {
+  const [imagenes, setImagenes] = useState([]);
+
+  useEffect(() => {
+    fetch('/content/galeria.json')
+      .then(res => res.json())
+      .then(data => setImagenes(data));
+  }, []);
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-      {images.map((img, index) => (
-        <motion.div 
-          key={index} 
-          whileHover={{ scale: 1.05 }}
-          className="relative h-64 rounded-xl overflow-hidden shadow-lg"
-        >
+      {imagenes.map((img, index) => (
+        <div key={index} className="relative h-64 rounded-xl overflow-hidden shadow-lg">
           <Image 
-            src={img} 
-            alt={`Evento ${index + 1}`} 
-            layout="fill" 
-            objectFit="cover" 
+            src={img.imagen} 
+            alt={img.titulo} 
+            layout="fill"
+            objectFit="cover"
           />
-        </motion.div>
+        </div>
       ))}
     </div>
   );
