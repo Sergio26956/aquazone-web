@@ -1,31 +1,20 @@
-// ... (imports y Navbar/Footer)
-import { motion } from 'framer-motion';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+import Image from 'next/image';
 
 export default function KamikazeJump() {
   return (
     <div>
-      {/* ... (Hero Section existente) */}
-      
-      {/* Nueva Sección: Tarjetas 3D */}
-      <div className="max-w-7xl mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-2 gap-8">
-          <motion.div 
-            whileHover={{ rotateY: 180 }}
-            className="bg-blue-600 text-white p-6 rounded-xl h-64 perspective-1000"
-          >
-            <div className="preserve-3d w-full h-full text-center">
-              <div className="front absolute w-full h-full">
-                <h3 className="text-xl font-bold mb-4">Vista Frontal</h3>
-                <p>Altura: 10m | Materiales Antideslizantes</p>
-              </div>
-              <div className="back absolute w-full h-full rotate-y-180">
-                <h3 className="text-xl font-bold mb-4">Certificaciones</h3>
-                <p>Normativa CE | Inspección Anual</p>
-              </div>
-            </div>
-          </motion.div>
+      <Navbar />
+      <div className="bg-blue-50 py-20">
+        <div className="max-w-7xl mx-auto px-4 text-center">
+          <h1 className="text-4xl font-bold text-blue-900 mb-8">Kamikaze Jump 🚀</h1>
+          <div className="relative h-96 w-full mb-12 rounded-xl overflow-hidden shadow-2xl">
+            <Image src="/images/IMG_20191030_014304.webp" alt="Kamikaze" layout="fill" objectFit="cover" />
+          </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
