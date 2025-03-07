@@ -1,23 +1,33 @@
 import { motion } from 'framer-motion';
 
-export default function Testimonios() {
-  const testimonios = [
-    { text: "Excelente servicio, montaron el parque en menos de 3 horas.", author: "Ayuntamiento de Málaga" },
-    { text: "Los niños disfrutaron muchísimo en la comunión.", author: "Familia Rodríguez" }
-  ];
+const testimonios = [
+  {
+    text: "El mejor parque acuático hinchable que hemos probado. ¡Los niños no paraban de reír!",
+    author: "Familia López (Málaga)",
+    type: "flotante"
+  },
+  {
+    text: "Contratamos el Kamikaze Jump para un evento corporativo y fue un éxito total.",
+    author: "TechStart S.L.",
+    type: "terrestre"
+  }
+];
+
+export default function Testimonios({ section }) {
+  const filteredTestimonios = testimonios.filter(t => t.type === section);
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-16">
-      <h2 className="text-3xl font-bold text-center mb-12">Opiniones de Clientes</h2>
+      <h2 className="text-3xl font-bold text-center mb-12">Experiencias Reales</h2>
       <div className="grid md:grid-cols-2 gap-8">
-        {testimonios.map((testimonio, index) => (
+        {filteredTestimonios.map((testimonio, index) => (
           <motion.div 
-            key={index} 
+            key={index}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="bg-white p-6 rounded-xl shadow-lg"
+            className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-600"
           >
-            <p className="text-gray-600 mb-4">" {testimonio.text} "</p>
+            <p className="text-gray-600 mb-4 italic">" {testimonio.text} "</p>
             <p className="font-bold text-blue-600">— {testimonio.author}</p>
           </motion.div>
         ))}
