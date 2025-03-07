@@ -6,11 +6,13 @@ i18n.use(initReactI18next).init({
     en: {
       translation: {
         welcome: "Welcome to AQUAZONE",
+        contact: "Contact Us",
       }
     },
     es: {
       translation: {
         welcome: "Bienvenido a AQUAZONE",
+        contact: "Contáctanos",
       }
     }
   },
