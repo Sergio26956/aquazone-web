@@ -9,3 +9,7 @@ export function getCache(key) {
   if (!item || Date.now() > item.expires) return null;
   return item.data;
 }
+
+export function clearCache() {
+  cache.clear();
+}
