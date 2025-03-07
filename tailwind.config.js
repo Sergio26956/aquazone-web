@@ -3,16 +3,22 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'aqua-blue': '#0066cc', // Color personalizado
-        'aqua-yellow': '#ffcc00', // Color personalizado
+        'aqua-primary': '#0066CC',
+        'aqua-secondary': '#FFD700',
+        'aqua-dark': '#003366',
       },
       animation: {
-        'float': 'float 3s infinite ease-in-out', // Animación de flotación
+        'wave': 'wave 12s linear infinite',
+        'float': 'float 4s ease-in-out infinite',
       },
       keyframes: {
+        wave: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
         float: {
           '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-10px)' },
+          '50%': { transform: 'translateY(-20px)' },
         },
       },
     },
