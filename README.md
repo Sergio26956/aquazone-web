@@ -1,13 +1,13 @@
-# AQUAZONE
+# 🚀 AQUAZONE Web
 
-¡Bienvenido a AQUAZONE! Un proyecto de parques acuáticos hinchables.
+## Tecnologías Usadas
+- Next.js 14
+- React 18
+- Tailwind CSS
+- Firebase
+- OpenAI API
 
-## Instalación
-1. Clona el repositorio.
-2. Instala dependencias: `npm install`.
-3. Ejecuta el proyecto: `npm run dev`.
-
-## Despliegue
-1. Crea una cuenta en Vercel.
-2. Conecta tu repositorio de GitHub.
-3. ¡Despliega!
+## 🛠️ Instalación
+1. Clona el repositorio: `git clone https://github.com/tu-usuario/aquazone-web.git`
+2. Instala dependencias: `npm install`
+3. Variables de entorno: Crea `.env.local` con:
