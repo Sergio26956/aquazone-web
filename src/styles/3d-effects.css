@@ -1,0 +1,10 @@
+.button-3d {
+  background: linear-gradient(145deg, #0066cc, #004499);
+  box-shadow: 0 8px 15px rgba(0, 102, 204, 0.3);
+  transform: perspective(500px) rotateX(10deg);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.button-3d:hover {
+  transform: perspective(500px) rotateX(0deg);
+  box-shadow: 0 12px 20px rgba(0, 102, 204, 0.5);
+}
