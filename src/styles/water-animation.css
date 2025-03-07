@@ -1,0 +1,9 @@
+@keyframes water-flow {
+  0% { background-position: 0 0; }
+  100% { background-position: 100% 0; }
+}
+
+.water-background {
+  background: linear-gradient(90deg, rgba(0, 102, 204, 0.1), rgba(0, 51, 102, 0.05));
+  animation: water-flow 20s linear infinite;
+}
