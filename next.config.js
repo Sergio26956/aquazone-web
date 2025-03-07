@@ -1,10 +1,19 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['images.unsplash.com', 'localhost', 'res.cloudinary.com'],
+    domains: ['images.unsplash.com', 'res.cloudinary.com'],
+    formats: ['image/webp'],
+    minimumCacheTTL: 86400,
   },
-  experimental: {
-    optimizeFonts: true,
-    scrollRestoration: true,
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          { key: 'X-Content-Type-Options', value: 'nosniff' },
+          { key: 'X-Frame-Options', value: 'DENY' },
+        ],
+      },
+    ];
   },
 };
