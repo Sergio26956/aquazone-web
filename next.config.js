@@ -3,18 +3,9 @@ module.exports = {
   images: {
     domains: ['images.unsplash.com', 'res.cloudinary.com'],
     formats: ['image/webp'],
-    minimumCacheTTL: 86400,
+    minimumCacheTTL: 86400
   },
-  async headers() {
-    return [
-      {
-        source: '/(.*)',
-        headers: [
-          { key: 'X-Content-Type-Options', value: 'nosniff' },
-          { key: 'X-Frame-Options', value: 'DENY' },
-          { key: 'Content-Security-Policy', value: "default-src 'self'" },
-        ],
-      },
-    ];
-  },
+  experimental: {
+    scrollRestoration: true // ✅ Configuración válida
+  }
 };
