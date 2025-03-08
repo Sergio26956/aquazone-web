@@ -8,7 +8,12 @@ export default function AdminLogin() {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    await signInWithEmailAndPassword(auth, email, password);
+    try {
+      await signInWithEmailAndPassword(auth, email, password);
+      alert('Acceso concedido');
+    } catch (error) {
+      alert('Error: ' + error.message);
+    }
   };
 
   return (
@@ -21,6 +26,7 @@ export default function AdminLogin() {
           value={email} 
           onChange={(e) => setEmail(e.target.value)} 
           className="w-full p-2 mb-4 border rounded"
+          required
         />
         <input 
           type="password" 
@@ -28,6 +34,7 @@ export default function AdminLogin() {
           value={password} 
           onChange={(e) => setPassword(e.target.value)} 
           className="w-full p-2 mb-4 border rounded"
+          required
         />
         <button type="submit" className="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700">
           Entrar
