@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "firebase": "^10.12.0",
-    "@next/bundle-analyzer": "^14.2.3",
-    // ... resto de dependencias
-  }
-}
