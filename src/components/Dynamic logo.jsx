@@ -10,11 +10,10 @@ export default function DynamicLogo() {
       <text 
         x="50%" 
         y="50%" 
-        dominantBaseline="middle" 
-        textAnchor="middle" 
         fontSize="24" 
         fill="#FFFFFF"
         fontFamily="Arial"
+        textAnchor="middle"
       >
         AQUAZONE
         <tspan x="50%" dy="24" fontSize="16">WATERPARK</tspan>
