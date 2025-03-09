@@ -7,8 +7,7 @@ export default function HeroSection() {
       <div className="wave-bg"></div>
       <div className="relative z-10 text-center space-y-8">
         <div className="animate-float">
-          <Image 
-            src="/images/Logo.webp" 
+          
             alt="Logo AQUAZONE" 
             width={400} 
             height={150} 
