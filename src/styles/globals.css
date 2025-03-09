@@ -1,30 +1,15 @@
-/* Estilos globales - No tocar */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background-color: #f0f4f8;
+.holographic-text {
+  background: linear-gradient(45deg, #00ffff, #0066cc, #ff00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hologram 3s infinite;
 }
 
-/* Efectos de agua */
-.wave-bg {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%230066cc'/%3E%3C/svg%3E");
-  animation: wave 10s infinite linear;
-  opacity: 0.1;
-  z-index: 0;
+@keyframes hologram {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
 }
 
-@keyframes wave {
-  0% { background-position-x: 0; }
-  100% { background-position-x: 800px; }
-}
-
-/* Efecto Aurora */
 body::after {
   content: '';
   position: fixed;
@@ -35,9 +20,4 @@ body::after {
   background: radial-gradient(circle, rgba(0,102,204,0.1) 0%, rgba(0,51,102,0) 70%);
   animation: aurora 20s linear infinite;
   z-index: -1;
-}
-
-@keyframes aurora {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
 }
