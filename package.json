@@ -11,6 +11,10 @@
     "tailwindcss": "^3.3.3",
     "three": "^0.158.0",
     "@react-three/fiber": "^8.1.6",
-    "drei": "^2.2.3"
+    "drei": "^2.2.3",
+    "firebase": "^9.0.0",
+    "firebase/app": "^9.0.0",
+    "firebase/firestore": "^9.0.0",
+    "firebase/auth": "^9.0.0"
   }
 }
