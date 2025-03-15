@@ -1,5 +1,11 @@
 {
+  "name": "aquazone-web",
+  "version": "1.0.0",
   "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
     "vercel-build": "next build"
   },
   "dependencies": {
@@ -12,9 +18,10 @@
     "three": "^0.158.0",
     "@react-three/fiber": "^8.1.6",
     "drei": "^2.2.3",
-    "firebase": "^9.0.0",
-    "firebase/app": "^9.0.0",
-    "firebase/firestore": "^9.0.0",
-    "firebase/auth": "^9.0.0"
+    "firebase": "^9.0.0"  // ✅ Solo necesitas este paquete
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^14.2.3"
   }
 }
