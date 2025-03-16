@@ -1,4 +1,5 @@
-import '@/styles/globals.css';
+// ✅ Importación CORRECTA de estilos globales
+import '../styles/globals.css'; 
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
