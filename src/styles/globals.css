@@ -1,23 +1,4 @@
-.holographic-text {
-  background: linear-gradient(45deg, #00ffff, #0066cc, #ff00ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: hologram 3s infinite;
-}
-
-@keyframes hologram {
-  0% { filter: hue-rotate(0deg); }
-  100% { filter: hue-rotate(360deg); }
-}
-
-body::after {
-  content: '';
-  position: fixed;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle, rgba(0,102,204,0.1) 0%, rgba(0,51,102,0) 70%);
-  animation: aurora 20s linear infinite;
-  z-index: -1;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
