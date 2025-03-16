@@ -1,5 +1,5 @@
 import { Canvas } from '@react-three/fiber';
-import { Water } from 'drei';
+import { Water } from '@react-three/drei';
 
 export default function WaterScene() {
   return (
