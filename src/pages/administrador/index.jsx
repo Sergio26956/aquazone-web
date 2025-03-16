@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { auth } from '@/src/firebase/config';
+import { auth } from '../../firebase/config'; // ✅ Ruta corregida
 
 export default function AdminLogin() {
   const [email, setEmail] = useState('');
