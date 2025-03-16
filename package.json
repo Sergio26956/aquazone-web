@@ -6,7 +6,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "vercel-build": "next build"
+    "export": "next export"
   },
   "dependencies": {
     "next": "^14.2.24",
@@ -18,10 +18,10 @@
     "three": "^0.158.0",
     "@react-three/fiber": "^8.1.6",
     "drei": "^2.2.3",
-    "firebase": "^9.0.0"  // ✅ Solo necesitas este paquete
+    "firebase": "^10.12.1"
   },
   "devDependencies": {
     "eslint": "^8.57.1",
-    "eslint-config-next": "^14.2.3"
+    "eslint-config-next": "^14.2.24"
   }
 }
