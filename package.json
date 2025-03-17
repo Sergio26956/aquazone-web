@@ -11,7 +11,7 @@
     "next": "14.2.24",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "@heroicons/react": "1.0.6", // ✅ Versión CORRECTA (v1)
+    "@heroicons/react": "1.0.6",
     "framer-motion": "10.16.0",
     "tailwindcss": "3.3.3",
     "three": "0.163.0",
