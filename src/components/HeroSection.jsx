@@ -1,5 +1,6 @@
 import DynamicLogo from './DynamicLogo';
 import WaterScene from './WaterScene'; // Fondo 3D nuevo
+import Link from 'next/link'; // ✅ Añadí esta línea (Next.js requiere importar Link)
 
 export default function HeroSection() {
   return (
