@@ -1,12 +1,8 @@
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
+import React from 'react';
+import firebase from '@/src/firebase/config';
 
-export default function Home() {
-  return (
-    <>
-      <Navbar />
-      <h1>¡Bienvenido a Aquazone!</h1>
-      <Footer />
-    </>
-  );
-}
+const AdminPage = () => {
+  // Tu código aquí
+};
+
+export default AdminPage;
